@@ -4,7 +4,7 @@
   "description": "Easy Horizontal Scrolling for React",
   "main": "dist/react-scroll-horizontal.js",
   "scripts": {
-    "prepublish": "babel src --out-dir dist",
+    "prepublish": "babel src --out-dir dist --plugins transform-es2015-modules-umd",
     "dev": "webpack-dev-server --progress --color --config webpack.dev.config.js",
     "docs": "NODE_ENV=production webpack -p --progress --color",
     "start": "npm run dev"
